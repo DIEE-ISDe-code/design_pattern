@@ -11,11 +11,15 @@ class State(ABC):
 class StateLowerCase(State):
     def writeName(self, printer, name):
         print(name.lower())
-        printer.setState(StateUpperCase())
+        printer.setState(StateUpperCase1())
 
 
-class StateUpperCase(State):
+class StateUpperCase1(State):
+    def writeName(self, printer, name):
+        print(name.upper())
+        printer.setState(StateUpperCase2())
 
+class StateUpperCase2(State):
     def writeName(self, printer, name):
         print(name.upper())
         printer.setState(StateLowerCase())
