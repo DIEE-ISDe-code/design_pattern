@@ -2,3 +2,4 @@
 *.pyc
 __pychache__
 strategy_state/.DS_Store
+openClosedExamples/.DS_Store
